@@ -1,4 +1,7 @@
 const wordSearch = (letters, word) => { 
+    if (letters.length === 0) {
+        return false;
+    }
     const horizontalJoin = letters.map(ls => ls.join(''))
     // const diagonalJoin = y // whatever matrix function returns, but joined
 

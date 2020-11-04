@@ -51,6 +51,11 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+  
+  it("should return false if the word search array is empty", function() {
+    const result = wordSearch([], 'TRUCK');
+    assert.isFalse(result);
+  });
 
   // it("should return false if the word is not present vertically", function() {
   //   const result = wordSearch([
